@@ -1,0 +1,119 @@
+*{
+    margin:0px;
+    padding:1px;
+    box-sizing: border-box;
+}
+body{
+    color: #a9a9b3;
+    text-align: center;
+    background: #292a2d;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 10.5vh;
+    background-color:#252627;
+    font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+    font-display: auto;
+    padding-right: 80px;
+    padding-left: 75px;
+}
+.logo{
+    color: #a9a9b3;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+.logo__cursor{
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background:#fe5186 ;
+    border-radius: 1px;
+    animation:cursor;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+.nav-links li{
+    list-style: none;   
+}
+.nav-links a{
+    color: #a9a9b3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.container{
+    background: #292a2d;
+    size: 70px;
+    margin: 30px;
+    height: 400px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+.container-item{
+    background: #292a2d;
+    color: #a9a9b3;
+    text-align: center;
+    line-height: 50px;
+    margin:10px;
+}
+.container h2{
+    font-size: 2.735rem;
+    font-weight: bolder;
+    font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+    font-display: auto;
+}
+.container p{
+    font-family: inter ui,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+.container li{
+    display:inline-flex;
+    font-size:25px;
+    width: 40px;  
+}
+.footer{
+    background: #292a2d;
+    color:#999;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.footer-inner{
+    justify-content: center;
+    line-height: 1.6;
+    font-size:16px;
+    letter-spacing: .08em;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+.border-right{
+    border-right: 2px solid grey;
+    padding: 0px 10px;
+}
+@keyframes cursor {
+	50% { background:#fe5186; 
+	translate: transform(0px,0px); 
+
+}
+
+    100% {background:#252627;
+		translate: transform(20px,20px);
+}
